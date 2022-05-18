@@ -1,0 +1,48 @@
+a {
+  text-decoration: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(230,230,230);
+  padding: 10px;
+  position: sticky;
+  top: 0px;
+}
+
+.navbar a {
+  color: white;
+  background-color: #E57A44;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 15px;
+}
+
+.flat-card-upper {
+  background-color: rgba(230,230,230,0.5);
+  padding: 10px;
+  border: solid 1px rgba(230,230,230,1);
+  margin-top: 20px;
+}
+
+.flat-card-footer {
+  padding: 10px;
+  border: solid 1px rgba(230,230,230,1);
+}
+
+.flat-card-icons {
+  display: flex;
+}
+
+.map-banner {
+  height: 300px;
+  background-size: cover;
+  background-image: url('https://picsum.photos/1200/300');
+}
+
+#logo {
+  color: #E57A44;
+  font-weight: bold;
+  background-color: transparent;
+}

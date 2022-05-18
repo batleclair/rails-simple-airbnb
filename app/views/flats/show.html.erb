@@ -1,0 +1,48 @@
+<div class="map-banner">
+</div>
+
+<div class="container flat-overlay">
+  <div class="row">
+    <div class="col-8">
+
+      <div class="flat-details-header">
+        <h1><%= @flat.name %></h1>
+        <h6><%= @flat.address %></h6>
+      </div>
+
+      <div class="flat-details-main">
+        <h3>A bit more about this flat...</h3>
+        <p><%= @flat.description %></p>
+      </div>
+
+      <div class="flat-details-footer">
+        <i class="fa-solid fa-user-group"></i>
+        <p><%= @flat.number_of_guests %></p>
+        <i class="fa-solid fa-euro-sign"></i>
+        <p><%= @flat.price_per_night %></p>
+      </div>
+
+    </div>
+
+    <div class="col-4">
+      <div class="flat-cta">
+        <div class="flat-booking-form">
+          <p>Book this place!</p>
+          <p>from...</p>
+          <p>to...</p>
+          <a href=""class="btn btn-primary">Book</a>
+        </div>
+        <div class="flat-booking-form-footer">
+          <h6>Share</h6>
+          <ul>
+            <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href=""><i class="fa-brands fa-pinterest"></i></a></li>
+            <li><a href=""><i class="fa-solid fa-envelope"></i></a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

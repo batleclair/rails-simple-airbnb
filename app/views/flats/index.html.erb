@@ -1,0 +1,24 @@
+<div class="container">
+  <h1>All our flats (<%= @flats.count %>)</h1>
+  <div class="row">
+    <% @flats.each do |flat| %>
+      <div class="col-4 flat-card">
+        <div class="flat-card-upper">
+          <h3><%= flat.name %></h3>
+          <p><%= flat.address %></p>
+          <div class="flat-card-icons">
+            <i class="fa-solid fa-user-group"></i>
+            <p><%= flat.number_of_guests %></p>
+            <i class="fa-solid fa-euro-sign"></i>
+            <p><%= flat.price_per_night %></p>
+          </div>
+        </div>
+        <div class="flat-card-footer">
+          <%= link_to 'More Info', flat_path(flat) %>
+          <%= link_to 'Edit', edit_flat_path(flat) %>
+          <%= link_to 'Delete', flats_path, data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
